@@ -1,4 +1,4 @@
-# Exercises 1
+# Exercises 2
 
 ## Modules and Functions
 
