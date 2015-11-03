@@ -11,4 +11,13 @@ defmodule MyList do
    each(tail, apply)
   end
 
+  def filter([], _), do: []
+  def filter([head | tail], apply) do
+    if apply.(head) do
+      [head | filter(tail, apply)]
+    else
+      filter(tail, apply)
+    end
+  end
+
 end
